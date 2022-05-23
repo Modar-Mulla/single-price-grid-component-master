@@ -84,7 +84,7 @@ body {
   font-size: 15px;
   color: var(--Light-Gray);
   opacity: 0.9;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .sub-about .subscription button {
@@ -138,6 +138,9 @@ body {
 }
 
 @media (max-width: 767.5px) {
+  .container{
+    width: 100%;
+  }
   .sub-about {
     display: block;
   }

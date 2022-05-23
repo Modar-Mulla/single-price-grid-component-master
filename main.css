@@ -1,0 +1,119 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 40px;
+}
+.intro h2 {
+  color: var(--cyan);
+  margin-bottom: 20px;
+}
+
+.intro h3 {
+  color: var(--Bright-Yellow);
+  margin-bottom: 20px;
+}
+.intro p {
+  color: var(--Grayish-Blue);
+  margin-bottom: 10px;
+}
+
+.sub-about{
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sub-about .subscription{
+  padding: 40px;
+  background-color: var(--cyan);
+}
+.sub-about .subscription h3{
+  color: var(--Light-Gray);
+  margin-bottom: 20px;
+}
+.sub-about .subscription h1{
+  display: flex;
+  align-items: center;
+  color: var(--Light-Gray);
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.sub-about .subscription h1 span{
+  color: var(--Light-Gray);
+  font-size: 20px;
+  margin-left: 20px;
+  opacity: 0.5;
+}
+.sub-about .subscription p{
+  color: var(--Light-Gray);
+  margin-bottom: 50px;
+}
+.sub-about .subscription button{
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Bright-Yellow);
+  color: var(--Light-Gray);
+  font-weight: 700;
+  font-size: 15px;
+  height: 50px;
+  max-width: 400px;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.sub-about .subscription button:hover{
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.about{
+  background-color:#4abebd;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.about h3{
+  color: var(--Light-Gray);
+  margin-bottom: 20px;
+}
+.about p{
+  max-width: 200px;
+  line-height: 1.7;
+  color: var(--Light-Gray);
+  opacity: 0.8;
+}
+
+@media (max-width:767.5px){
+  .sub-about{
+    display: block;
+  }
+}
